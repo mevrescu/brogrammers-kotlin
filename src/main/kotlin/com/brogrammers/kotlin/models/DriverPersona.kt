@@ -7,6 +7,5 @@ data class DriverPersona(
         var firstName: String = "",
         var lastName: String = "",
         var email: String = "",
-        var phoneNumer: String = "",
-        var documents: Map<Docs, String> = Collections.emptyMap()
+        var phoneNumer: String = ""
 )

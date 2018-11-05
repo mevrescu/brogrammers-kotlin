@@ -4,7 +4,6 @@ import com.brogrammers.kotlin.models.DriverPersona
 import com.brogrammers.kotlin.services.DriverService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
-import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController()
@@ -14,6 +13,7 @@ class DriverPersonaController(
 
 
     @GetMapping("/driver/add/{username}")
-    fun addDriver(@PathVariable username: String) = driverService.addDriver(DriverPersona(username))
+    fun addDriver(@PathVariable username: String) =
+            driverService.addDriver(DriverPersona(username))
 
 }

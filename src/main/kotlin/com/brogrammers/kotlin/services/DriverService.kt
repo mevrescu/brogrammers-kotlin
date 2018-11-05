@@ -5,8 +5,9 @@ import com.brogrammers.kotlin.producers.DriverProducer
 import org.springframework.stereotype.Service
 
 @Service
-class DriverService (var driverProducer: DriverProducer){
+class DriverService(var driverPersonaProducer: DriverProducer) {
 
-    fun addDriver(driver: DriverPersona) = driverProducer.publishDriver(driver)
+    fun addDriver(driver: DriverPersona) =
+            driverPersonaProducer.publishDriverPersona(driver)
 
 }
